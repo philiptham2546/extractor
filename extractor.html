@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extractor</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+    <script src="extract.js" defer></script>
+</head>
+<body>
+    <h1>Welcome to extractor!</h1>
+    <p>
+        Make sure that the search criteria to extract data are correct before using this! (Need to hard code this based on the html of the url you're looking at)<br>
+        To use, first, load all the data into the table below. Then, you can filter based on the document type.
+    </p>
+    <label for="url">Step 1. Url to extract data from: </label>
+    <input type="text" name="url" id="url">
+    <button id="submit_btn">Submit</button>
+    <button id="clear">Clear all!</button>
+    <br>
+    <br>
+    <label for="filter">Step 2. Filter by: </label>
+    <input type="text" name="filter" id="filter">
+    <button id="filter_btn">Filter</button>
+    <button id="unfilter_btn">Unfilter</button>
+    <br>
+    <br>
+    <div id="content">
+        <table id="data">
+            <thead>
+                <th>s/n</th>
+                <th>Title</th>
+                <th>Link</th>
+                <th>Type</th>
+                <th>Date</th>
+            </thead>
+            <tbody id="tbody"></tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
