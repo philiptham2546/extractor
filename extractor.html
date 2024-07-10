@@ -6,7 +6,7 @@
     <title>Extractor</title>
     <style>
         table {
-            width: 100%;
+            width: 70vw;
             border-collapse: collapse;
         }
         th, td {
@@ -24,12 +24,13 @@
     <h1>Welcome to extractor!</h1>
     <p>
         Make sure that the search criteria to extract data are correct before using this! (Need to hard code this based on the html of the url you're looking at)<br>
-        To use, first, load all the data into the table below. Then, you can filter based on the document type.
+        To use, first, load all the data into the table below. Then, click save. Next, you can filter based on the document type (not case sensitive).
     </p>
     <label for="url">Step 1. Url to extract data from: </label>
     <input type="text" name="url" id="url">
     <button id="submit_btn">Submit</button>
     <button id="clear">Clear all!</button>
+    <button id="save">Save!</button>
     <br>
     <br>
     <label for="filter">Step 2. Filter by: </label>
