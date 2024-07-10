@@ -43,6 +43,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   exc_unfil_btn.addEventListener("click",()=>{
     tbody.innerHTML = table_mem;
+
   })
 
   btn.addEventListener("click", () => {
@@ -74,6 +75,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   back_btn.addEventListener("click",()=>{
     table.innerHTML = filtered_mem;
+    tbody = document.getElementById("tbody");
     let paras = content_cont.querySelectorAll("p");
     for (let p of paras){
       content_cont.removeChild(p);
