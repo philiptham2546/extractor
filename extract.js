@@ -1,5 +1,5 @@
 
-  document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener("DOMContentLoaded", () => {
     let url = document.getElementById("url");
     let btn = document.getElementById("submit_btn");
     let table = document.getElementById("data");
@@ -8,7 +8,9 @@
     let filter_btn = document.getElementById("filter_btn");
     let unfilter_btn = document.getElementById("unfilter_btn");
     let filter = document.getElementById("filter");
+    let save = document.getElementById("save");
     let url_link_mem = '';
+    let table_mem = '';
   
     btn.addEventListener("click", () => {
       let url_link = url.value; 
@@ -19,6 +21,10 @@
 
     clear_btn.addEventListener("click", () => {
         clearTable();
+    })
+
+    save.addEventListener("click",()=>{
+        table_mem = tbody.innerHTML;
     })
 
     function clearTable(){
@@ -32,8 +38,7 @@
     })
 
     unfilter_btn.addEventListener("click",()=>{
-        clearTable();
-        fetchHTML(url_link_mem);
+        tbody.innerHTML = table_mem;
     })
   
     function filterBy(crit){
@@ -80,7 +85,8 @@
         for (let art of arts) {
             let h5 = art.querySelector("div > div > h5 > a");
             let type_text = art.querySelector("article > div:nth-of-type(3) > div:nth-of-type(1)");
-            let date_text = art.querySelector("article > div:nth-of-type(3) > div:nth-of-type(2)")
+            let date_text = art.querySelector("article > div:nth-of-type(3) > div:nth-of-type(2)");
+            let author_text = art.querySelector("article > div:nth-of-type(2)").textContent;
           let link_text = h5.href;
           let title_text = h5.textContent;
           let tr = document.createElement("tr");
@@ -93,7 +99,7 @@
           date.textContent = date_text.textContent;
           type.id = "type";
           link.textContent = link_text;
-          title.textContent = title_text;
+          title.innerHTML = `${title_text}<br><b>${author_text}</b>`;
           type.textContent = type_text.textContent;
           tr.appendChild(sn);
           tr.appendChild(title);
