@@ -23,20 +23,24 @@
 <body>
     <h1>Welcome to extractor!</h1>
     <p>
-        Make sure that the search criteria to extract data are correct before using this! (Need to hard code this based on the html of the url you're looking at)<br>
-        To use, first, load all the data into the table below. Then, click save. Next, you can filter based on the document type (not case sensitive).
+        Caution: make sure that the search criteria to extract data are correct before using this! (Need to hard code this based on the html of the url you're looking at)<br><br>
+        Instructions: (1) Load all data and then <b>remember to save</b> (note, you can re-save or clear the table at any step). (2a) Input filters for inclusion. (2b) Input filters for exclusion. (3) Convert the table into text.
     </p>
+    <hr>
+    <button id="save">Save!</button>
+    <button id="clear">Clear all!</button>
+    <br>
+    <br>
     <label for="url">Step 1. Url to extract data from: </label>
     <input type="text" name="url" id="url">
     <button id="submit_btn">Submit</button>
-    <button id="clear">Clear all!</button>
-    <button id="save">Save!</button>
     <br>
     <br>
     <label for="filter">Step 2a.  Includes: </label>
     <input type="text" name="filter" id="filter">
     <button id="filter_btn">Filter</button>
     <button id="unfilter_btn">Unfilter</button>
+    <br>
     <br>
     <label for="exc">Step 2b.  Excludes: </label>
     <input type="text" name="exc" id="exc">
