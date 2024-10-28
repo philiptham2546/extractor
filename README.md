@@ -1,6 +1,6 @@
 This is an extractor and text-ify tool to scrape for UN websites from UN pages. 
 
-<h2>Steps to run<\h2>
+<h2>Steps to run</h2>
 Either go to this <a href="https://htmlpreview.github.io/?https://github.com/philiptham2546/extractor/blob/main/extractor.html" text="link"> or download extractor.js and extractor.html and open the html file in your browser.
 
 <h2>Description</h2>
