@@ -8,4 +8,7 @@ Extracts the title of official and open UN documents from a given UN website lin
 
 <h2>Example usage on UN OEWG on ICT and international security documents page</h2>
 Link to UN page: <a href="https://meetings.unoda.org/meeting/57871/documents">UN OEWG on ICTs</a>
+<ul>Filter function</ul>
+<img width="1386" alt="Screenshot 2024-10-28 at 23 00 24" src="https://github.com/user-attachments/assets/3c8f72ea-fe76-4cf1-947a-03569c07be3a">
+<ul>Convert from table to UN formatted text</ul>
 <img width="1345" alt="Screenshot 2024-10-28 at 15 56 37" src="https://github.com/user-attachments/assets/660d54ff-973c-465f-ab1e-78cefbb54a47">
